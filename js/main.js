@@ -56,9 +56,7 @@
         });
     }
 
-    /* ══════════════════════
-       SCROLL REVEAL (IntersectionObserver)
-       ══════════════════════ */
+    /* Scroll reveal: makes elements appear as you scroll down the page */
     function initReveal() {
         const reveals = document.querySelectorAll('.reveal');
         if (!reveals.length) return;
