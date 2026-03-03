@@ -255,9 +255,7 @@ button {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ══════════════════════
-   BUTTONS — Mechanical Haptic
-   ══════════════════════ */
+/* Buttons: styled to feel like real mechanical switches when clicked */
 .btn {
   display: inline-flex;
   align-items: center;
