@@ -170,10 +170,7 @@
         updateProgress();
     }
 
-    /* ══════════════════════
-       COUNTER ANIMATION
-       Animate numbers from 0 to target
-       ══════════════════════ */
+    /* Counter animation: numbers count up from 0 when they come into view */
     function initCounters() {
         const counters = document.querySelectorAll('.counter');
         if (!counters.length) return;
