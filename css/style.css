@@ -439,48 +439,44 @@ button {
 
 /* ══════════════════════
    CHRONOLOGY / TIMELINE
+   Scroll-driven horizontal cards
    ══════════════════════ */
 .chronology {
-  padding: var(--space-2xl) 0 var(--space-xl);
-  overflow: hidden;
+  position: relative;
+  padding-top: var(--space-2xl);
+  padding-bottom: 0;
+  /* Extra height = scroll room for horizontal movement */
 }
 
 .timeline {
-  position: relative;
+  position: sticky;
+  top: var(--nav-h);
+  height: calc(100vh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
   padding: 0 var(--space-md);
 }
 
 .timeline__track {
   display: flex;
   gap: var(--space-md);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  will-change: transform;
+  transition: none;
   padding: var(--space-md) 0 var(--space-lg);
-  cursor: grab;
-}
-
-.timeline__track::-webkit-scrollbar {
-  display: none;
-}
-
-.timeline__track:active {
-  cursor: grabbing;
 }
 
 .timeline__card {
   flex: 0 0 min(420px, 85vw);
-  scroll-snap-align: center;
   background: var(--obsidian-90);
   border: 1px solid var(--carrara-10);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .timeline__card:hover {
-  transform: translateY(-6px);
   border-color: var(--carrara-20);
   box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
 }
@@ -560,42 +556,15 @@ button {
 
 .timeline__progress-bar {
   height: 100%;
-  width: 25%;
+  width: 5%;
   background: var(--red);
   border-radius: 1px;
-  transition: width .3s var(--ease-out);
+  transition: width .1s linear;
 }
 
-/* Timeline nav */
+/* Timeline nav — hidden, scroll controls it now */
 .timeline__nav {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-sm);
-  margin-top: var(--space-md);
-}
-
-.timeline__nav-btn {
-  width: 48px;
-  height: 48px;
-  border: 1px solid var(--carrara-20);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: var(--carrara-60);
-  transition: all .25s var(--ease-mechanical);
-}
-
-.timeline__nav-btn:hover {
-  border-color: var(--red);
-  color: var(--carrara);
-  transform: scale(.95);
-  box-shadow: 0 0 20px var(--red-glow);
-}
-
-.timeline__nav-btn:active {
-  transform: scale(.9);
+  display: none;
 }
 
 /* ══════════════════════
@@ -1034,6 +1003,11 @@ button {
 
   .timeline__card-img-wrap {
     height: 200px;
+  }
+
+  .timeline {
+    top: 60px;
+    height: calc(100vh - 60px);
   }
 
   .victory-card__img-wrap {
