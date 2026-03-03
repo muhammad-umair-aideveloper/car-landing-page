@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche — Success is a Derivative of Defiance</title>
+  <meta name="description" content="Porsche. 75 years of defying convention. Explore the engineering, the legacy, and the relentless pursuit of performance that defines an icon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav id="main-nav" class="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Porsche Home">
+        <svg class="nav__logo-svg" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="12" fill="currentColor" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="6">PORSCHE</text>
+        </svg>
+      </a>
+      <button id="nav-toggle" class="nav__toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav__menu">
+        <li><a href="#chronology" class="nav__link">Heritage</a></li>
+        <li><a href="#engineering" class="nav__link">Engineering</a></li>
+        <li><a href="#victories" class="nav__link">Victories</a></li>
+        <li><a href="#sonderwunsch" class="nav__link">Sonderwunsch</a></li>
+        <li><a href="#sonderwunsch" class="nav__cta-link">Enter the Atelier</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════ ZONE 1 — HERO ═══════════ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <img src="assets/images/hero.png" alt="Porsche 911 silhouette" loading="eager" class="hero__img">
+      <div class="hero__gradient"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__overtitle reveal">Since 1948</p>
+      <h1 class="hero__title reveal">
+        Success is a<br>
+        <span class="hero__title--accent">derivative</span> of defiance.
+      </h1>
+      <p class="hero__sub reveal">75 years of engineering conviction. Zero compromises.</p>
+      <a href="#sonderwunsch" class="btn btn--primary reveal" id="hero-cta">
+        <span class="btn__text">Enter the Atelier</span>
+        <span class="btn__arrow">&rarr;</span>
+      </a>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ ZONE 2 — CHRONOLOGY ═══════════ -->
+  <section id="chronology" class="chronology">
+    <div class="section-header reveal">
+      <span class="section-header__label">02 — Heritage</span>
+      <h2 class="section-header__title">The Chronology<br>of Innovation</h2>
+      <p class="section-header__sub">Four inflection points that redefined what an automobile could be.</p>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="timeline__track" id="timeline-track">
+        <!-- Era 1: 1948 -->
+        <article class="timeline__card" data-year="1948">
+          <div class="timeline__card-img-wrap">
+            <img src="assets/images/timeline_1948.png" alt="1948 Porsche 356" loading="lazy" class="timeline__card-img">
+          </div>
+          <div class="timeline__card-body">
+            <span class="timeline__card-year">1948</span>
+            <h3 class="timeline__card-title">The Origin Thesis</h3>
+            <p class="timeline__card-text">Ferry Porsche built the 356 because no existing car met his standard. Not a reaction to market demand—a rejection of mediocrity. 1,100 cc. 40 hp. The blueprint for every Porsche that followed.</p>
+            <div class="timeline__card-spec">
+              <span>356/1</span>
+              <span>1,131 cc</span>
+              <span>40 HP</span>
+            </div>
+          </div>
+        </article>
+        <!-- Era 2: 1963 -->
+        <article class="timeline__card" data-year="1963">
+          <div class="timeline__card-img-wrap">
+            <img src="assets/images/timeline_1963.png" alt="1963 Porsche 911" loading="lazy" class="timeline__card-img">
+          </div>
+          <div class="timeline__card-body">
+            <span class="timeline__card-year">1963</span>
+            <h3 class="timeline__card-title">The 911 Equation</h3>
+            <p class="timeline__card-text">A rear-engine layout the industry called "wrong." 60 years later, every competitor still chases the silhouette Butzi Porsche drew. The world's most recognizable sports car wasn't designed to be liked—it was designed to endure.</p>
+            <div class="timeline__card-spec">
+              <span>Type 901</span>
+              <span>1,991 cc Flat-6</span>
+              <span>130 HP</span>
+            </div>
+          </div>
+        </article>
+        <!-- Era 3: 1974 -->
+        <article class="timeline__card" data-year="1974">
+          <div class="timeline__card-img-wrap">
+            <img src="assets/images/timeline_1974.png" alt="1974 Porsche 911 Turbo" loading="lazy" class="timeline__card-img">
+          </div>
+          <div class="timeline__card-body">
+            <span class="timeline__card-year">1974</span>
+            <h3 class="timeline__card-title">Forced Induction</h3>
+            <p class="timeline__card-text">The 930 Turbo took race-bred turbocharging technology and put it on the street. 260 HP from a 3.0L flat-six. Critics said it was undriveable. Buyers proved them irrelevant.</p>
+            <div class="timeline__card-spec">
+              <span>Type 930</span>
+              <span>2,994 cc Turbo</span>
+              <span>260 HP</span>
+            </div>
+          </div>
+        </article>
+        <!-- Era 4: 2026 -->
+        <article class="timeline__card" data-year="2026">
+          <div class="timeline__card-img-wrap">
+            <img src="assets/images/timeline_2026.png" alt="2026 Porsche Hybrid Future" loading="lazy" class="timeline__card-img">
+          </div>
+          <div class="timeline__card-body">
+            <span class="timeline__card-year">2026</span>
+            <h3 class="timeline__card-title">The Hybrid Thesis</h3>
+            <p class="timeline__card-text">E-fuels and hybrid powertrains—not as a concession, but as an evolution. The 911 doesn't abandon combustion; it transcends it. 700+ HP. Carbon-neutral. The internal combustion engine lives—on Porsche's terms.</p>
+            <div class="timeline__card-spec">
+              <span>Hybrid</span>
+              <span>E-Fuel Compatible</span>
+              <span>700+ HP</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="timeline__progress">
+        <div class="timeline__progress-bar" id="timeline-progress"></div>
+      </div>
+      <div class="timeline__nav">
+        <button class="timeline__nav-btn" id="timeline-prev" aria-label="Previous era">&larr;</button>
+        <button class="timeline__nav-btn" id="timeline-next" aria-label="Next era">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ZONE 3 — ENGINEERING ═══════════ -->
+  <section id="engineering" class="engineering">
+    <div class="section-header reveal">
+      <span class="section-header__label">03 — Engineering</span>
+      <h2 class="section-header__title">The Physics of<br>Performance</h2>
+      <p class="section-header__sub">Every component exists for one reason: to make physics negotiate.</p>
+    </div>
+    <div class="engineering__grid">
+      <!-- Flat-Six -->
+      <article class="eng-card assemble" data-delay="0">
+        <div class="eng-card__img-wrap">
+          <img src="assets/images/engine_flatsix.png" alt="Porsche Flat-Six Engine" loading="lazy" class="eng-card__img">
+          <div class="eng-card__img-overlay"></div>
+        </div>
+        <div class="eng-card__body">
+          <span class="eng-card__label">Powertrain</span>
+          <h3 class="eng-card__title">The Flat-Six</h3>
+          <p class="eng-card__text">A horizontally-opposed six-cylinder layout delivers a lower center of gravity than any V-configuration. 9,000 RPM redline. Natural aspiration optional. The engine doesn't sit in the car—it defines the car's center of mass.</p>
+          <div class="eng-card__specs">
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">9,000</span>
+              <span class="eng-card__spec-unit">RPM Redline</span>
+            </div>
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">3.0L</span>
+              <span class="eng-card__spec-unit">Displacement</span>
+            </div>
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">650</span>
+              <span class="eng-card__spec-unit">HP (GT3 RS)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- PDK -->
+      <article class="eng-card assemble" data-delay="200">
+        <div class="eng-card__img-wrap">
+          <img src="assets/images/pdk_transmission.png" alt="PDK Dual-Clutch Transmission" loading="lazy" class="eng-card__img">
+          <div class="eng-card__img-overlay"></div>
+        </div>
+        <div class="eng-card__body">
+          <span class="eng-card__label">Transmission</span>
+          <h3 class="eng-card__title">PDK — Porsche Doppelkupplung</h3>
+          <p class="eng-card__text">Dual-clutch. Seven or eight speeds. Shift time: under 100 milliseconds. The human reflex averages 250ms. PDK doesn't wait for you—it pre-selects the next gear before you've decided to shift.</p>
+          <div class="eng-card__specs">
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">&lt;100</span>
+              <span class="eng-card__spec-unit">ms Shift Time</span>
+            </div>
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">8</span>
+              <span class="eng-card__spec-unit">Speed Ratios</span>
+            </div>
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">2.4s</span>
+              <span class="eng-card__spec-unit">0-100 km/h</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- PASM -->
+      <article class="eng-card assemble" data-delay="400">
+        <div class="eng-card__img-wrap">
+          <img src="assets/images/pasm_suspension.png" alt="PASM Active Suspension" loading="lazy" class="eng-card__img">
+          <div class="eng-card__img-overlay"></div>
+        </div>
+        <div class="eng-card__body">
+          <span class="eng-card__label">Suspension</span>
+          <h3 class="eng-card__title">PASM — Active Suspension</h3>
+          <p class="eng-card__text">Porsche Active Suspension Management reads the road 1,000 times per second. Each damper adjusts independently. The result: a car that corners at 1.2G and still absorbs a pothole at 200 km/h without spilling your espresso.</p>
+          <div class="eng-card__specs">
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">1,000</span>
+              <span class="eng-card__spec-unit">Reads/Second</span>
+            </div>
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">1.2G</span>
+              <span class="eng-card__spec-unit">Lateral Force</span>
+            </div>
+            <div class="eng-card__spec">
+              <span class="eng-card__spec-val">4</span>
+              <span class="eng-card__spec-unit">Independent Dampers</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════ ZONE 4 — VICTORIES ═══════════ -->
+  <section id="victories" class="victories">
+    <div class="section-header reveal">
+      <span class="section-header__label">04 — Legacy</span>
+      <h2 class="section-header__title">The Proof of<br>Excellence</h2>
+      <p class="section-header__sub">Records are not accolades. They are receipts.</p>
+    </div>
+    <div class="victories__grid">
+      <!-- Le Mans -->
+      <article class="victory-card reveal">
+        <div class="victory-card__img-wrap">
+          <img src="assets/images/lemans.png" alt="Porsche at Le Mans" loading="lazy" class="victory-card__img">
+          <div class="victory-card__img-overlay"></div>
+        </div>
+        <div class="victory-card__body">
+          <h3 class="victory-card__title">Le Mans 24 Hours</h3>
+          <p class="victory-card__text">19 overall victories. More than any other manufacturer in the history of the race. The 919 Hybrid Evo's 5:19.546 lap record at the Circuit de la Sarthe stood as proof: endurance and speed are not mutually exclusive—they are compounding.</p>
+          <div class="victory-card__stats">
+            <div class="victory-card__stat">
+              <span class="victory-card__stat-val counter" data-target="19">0</span>
+              <span class="victory-card__stat-label">Overall Victories</span>
+            </div>
+            <div class="victory-card__stat">
+              <span class="victory-card__stat-val counter" data-target="108">0</span>
+              <span class="victory-card__stat-label">Class Victories</span>
+            </div>
+            <div class="victory-card__stat">
+              <span class="victory-card__stat-val">5:19</span>
+              <span class="victory-card__stat-label">Lap Record (min)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Nürburgring -->
+      <article class="victory-card reveal">
+        <div class="victory-card__img-wrap">
+          <img src="assets/images/nurburgring.png" alt="Porsche at Nürburgring" loading="lazy" class="victory-card__img">
+          <div class="victory-card__img-overlay"></div>
+        </div>
+        <div class="victory-card__body">
+          <h3 class="victory-card__title">Nürburgring Nordschleife</h3>
+          <p class="victory-card__text">20.832 km. 73 turns. The "Green Hell" is the only benchmark that matters. The 911 GT2 RS MR holds the production car lap record at 6:38.835. Not a laboratory result—a measured fact on the most demanding circuit ever built.</p>
+          <div class="victory-card__stats">
+            <div class="victory-card__stat">
+              <span class="victory-card__stat-val">6:38</span>
+              <span class="victory-card__stat-label">Production Record</span>
+            </div>
+            <div class="victory-card__stat">
+              <span class="victory-card__stat-val">5:19</span>
+              <span class="victory-card__stat-label">919 Evo Record</span>
+            </div>
+            <div class="victory-card__stat">
+              <span class="victory-card__stat-val counter" data-target="73">0</span>
+              <span class="victory-card__stat-label">Corners</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════ ZONE 5 — SONDERWUNSCH ═══════════ -->
+  <section id="sonderwunsch" class="sonderwunsch">
+    <div class="section-header reveal">
+      <span class="section-header__label">05 — Individualization</span>
+      <h2 class="section-header__title">Sonderwunsch</h2>
+      <p class="section-header__sub">"Special wish." The Porsche bespoke program where the only constraint is physics.</p>
+    </div>
+    <div class="sonder__showcase">
+      <div class="sonder__card reveal">
+        <div class="sonder__card-img-wrap">
+          <img src="assets/images/bespoke_leather.png" alt="Hand-stitched leather detail" loading="lazy" class="sonder__card-img">
+        </div>
+        <div class="sonder__card-body">
+          <h3 class="sonder__card-title">Material Autonomy</h3>
+          <p class="sonder__card-text">Every stitch is placed by hand. Leather sourced from single-origin tanneries. Thread color, stitch pattern, embossing depth—each parameter is yours to specify. This is not personalization. It is authorship.</p>
+        </div>
+      </div>
+      <div class="sonder__card reveal">
+        <div class="sonder__card-img-wrap">
+          <img src="assets/images/bespoke_carbon.png" alt="Carbon fiber weave detail" loading="lazy" class="sonder__card-img">
+        </div>
+        <div class="sonder__card-body">
+          <h3 class="sonder__card-title">Structural Expression</h3>
+          <p class="sonder__card-text">Carbon fiber isn't decoration—it's a structural statement. Choose weave pattern, resin tint, and gloss level. Each panel is matched to &lt;0.5mm tolerance. Weight saved: 8.2 kg average. Precision earned: immeasurable.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sonder__cta-wrap reveal">
+      <p class="sonder__cta-text">Your configuration. Your conviction. Engineered without compromise.</p>
+      <a href="#" class="btn btn--primary btn--large" id="commission-cta">
+        <span class="btn__text">Commission Yours</span>
+        <span class="btn__arrow">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg class="footer__logo" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="12" fill="currentColor" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="6">PORSCHE</text>
+        </svg>
+        <p class="footer__tagline">There is no substitute.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#chronology">Heritage</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#victories">Victories</a>
+        <a href="#sonderwunsch">Sonderwunsch</a>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; 2026 Porsche AG. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
