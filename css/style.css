@@ -968,9 +968,7 @@ button {
   letter-spacing: .05em;
 }
 
-/* ══════════════════════
-   RESPONSIVE — MOBILE FIRST VERTICAL GALLERY
-   ══════════════════════ */
+/* Mobile layout: makes the page look good on phones and tablets */
 @media(max-width:1024px) {
   .engineering__grid {
     grid-template-columns: 1fr 1fr;
